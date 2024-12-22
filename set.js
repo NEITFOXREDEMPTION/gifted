@@ -50,6 +50,6 @@ PRESENCE: process.env.PRESENCE || "online", // Choose one: typing, recording, on
 TIME_ZONE: process.env.TIME_ZONE || "Africa/Nairobi", // Enter yours else leave blank if not sure
 };
 
-let file = require.resolve(__filename); 
+let file = require.resolve(__filename); Yobrah 
 fs.watchFile(file, () => { fs.unwatchFile(file); console.log(`Update '${__filename}'`); delete require.cache[file]; require(file); });
 // That's All...
